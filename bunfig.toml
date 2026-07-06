@@ -16,8 +16,10 @@ save = "exact"
 # updated alongside backend proto changes and are trusted as first-party packages.
 # @privy-io/expo, @privy-io/js-sdk-core, and @privy-io/routes are allowed for
 # time-sensitive SDK upgrades coordinated with Privy.
+# yeetful is the first-party chat-embed SDK for this fork (github.com/Yeetful/sdk).
 minimumReleaseAge = 259200
 minimumReleaseAgeExcludes = [
+  "yeetful",
   "@privy-io/expo",
   "@privy-io/js-sdk-core",
   "@privy-io/routes",
