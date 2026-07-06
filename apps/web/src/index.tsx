@@ -63,6 +63,7 @@ import { useDeferredComponent } from '~/hooks/useDeferredComponent'
 import { isPrivyConfigured } from '~/hooks/useMaybePrivy'
 import { LanguageProvider } from '~/i18n/LanguageProvider'
 import { BlockNumberProvider } from '~/lib/hooks/useBlockNumber'
+import { YeetfulChat } from '~/components/YeetfulChat'
 import { WebNotificationServiceManager } from '~/notification-service/WebNotificationService'
 import { onHashcashSolveCompleted, onTurnstileSolveCompleted, sessionInitAnalytics } from '~/sessions/analytics'
 import store from '~/state'
@@ -279,6 +280,7 @@ const RootApp = (): JSX.Element => {
                                                     <PortalProvider>
                                                       <WebNotificationServiceManager />
                                                       <ThemedGlobalStyle />
+                                                      <YeetfulChat />
                                                       <App />
                                                       {AgentationLazy && isDevEnv() && (
                                                         <Suspense fallback={null}>
