@@ -16,6 +16,11 @@ export function YeetfulChat(): null {
       mode: 'bubble',
       mcps: ['uniswap-free'],
       wallet: 'auto',
+      // PUBLIC embed key (publishable by design) — attributes this embed to
+      // the owning Yeetful account: the site shows under the dashboard's
+      // "Your embeds", turns feed its analytics, and house-model answers
+      // bill the owner's plan instead of each visitor's free tier.
+      key: process.env.YEETFUL_EMBED_KEY || 'yfe_c24dafeb5923c2020c62b65c',
       // oxlint-disable-next-line eslint-js/no-restricted-syntax -- dev-only origin override, empty in production builds
       origin: process.env.YEETFUL_EMBED_ORIGIN || undefined,
     })
