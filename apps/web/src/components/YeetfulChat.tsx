@@ -6,6 +6,9 @@ import { mountYeetfulChat } from 'yeetful/embed'
  * bubble scoped to the Uniswap MCP. `wallet: 'auto'` bridges this page's
  * EIP-1193 provider into the chat, so balance/order questions use the
  * connected account and any signature pops the user's own wallet here.
+ *
+ * The bubble mounts once on load and tears itself down on unmount, so it
+ * adds no surface area to the host app beyond this component.
  */
 export function YeetfulChat(): null {
   useEffect(() => {
