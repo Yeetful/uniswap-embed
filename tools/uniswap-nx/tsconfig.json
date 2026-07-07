@@ -1,0 +1,10 @@
+{
+  "__comment": "Stub tsconfig for the internal Nx generators workspace. The public mirror of this repo omits the real sources, but the root tsconfig.json lists ./tools/uniswap-nx as a project reference — without this file, tsconfig-paths / tsgo -b error with ENOENT. Empty files/include means nothing is compiled.",
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist"
+  },
+  "files": [],
+  "include": []
+}
